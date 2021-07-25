@@ -42,13 +42,13 @@ Você pode fornecer parâmetros ou variáveis de ambiente de configuração ao i
 * **PSWD**: *`string`* Senha para conexão com o banco de dados;
 * **SERVICE_NAME**: *`string`* Service_name do banco;
 * **SID**: *`string`* Sid do banco;
-* **POOL_MIN**: *`string`* O mínimo de conexões que o pool mantem sempre abertas;
-* **POOL_MAX**: *`string`* O número máximo de conexões que o pool pode abrir;
-* **POOL_INCREMENT**: *`string`* A quantidade de conexões que serão abertas sempre que o banco precisar incrementar o pool até o POOL_MAX ser atingido;
-* **POOL_PING_INTERVAL**: *`string`* O número máximo de segundos que uma conexão pode permanecer ociosa em um pool de conexão antes que o node-oracledb efetue ping no banco de dados antes de retornar essa conexão ao aplicativo;
-* **POOL_TIMEOUT**: *`string`* O número de segundos após os quais as conexões inativas (não utilizadas no pool) podem ser encerradas;
-* **POOL_QUEUE_TIMEOUT**: *`string`* O número de milissegundos após os quais os pedidos de conexão que aguardam na fila de pedidos de conexão são encerrados;
-* **POOL_STMT_CACHE_SIZE**: *`string`* O número de instruções a serem armazenadas em cache no cache de instruções de cada conexão;
+* **POOL_MIN**: *`integer`* O mínimo de conexões que o pool mantem sempre abertas;
+* **POOL_MAX**: *`integer`* O número máximo de conexões que o pool pode abrir;
+* **POOL_INCREMENT**: *`integer`* A quantidade de conexões que serão abertas sempre que o banco precisar incrementar o pool até o POOL_MAX ser atingido;
+* **POOL_PING_INTERVAL**: *`integer`* O número máximo de segundos que uma conexão pode permanecer ociosa em um pool de conexão antes que o node-oracledb efetue ping no banco de dados antes de retornar essa conexão ao aplicativo;
+* **POOL_TIMEOUT**: *`integer`* O número de segundos após os quais as conexões inativas (não utilizadas no pool) podem ser encerradas;
+* **POOL_QUEUE_TIMEOUT**: *`integer`* O número de milissegundos após os quais os pedidos de conexão que aguardam na fila de pedidos de conexão são encerrados;
+* **POOL_STMT_CACHE_SIZE**: *`integer`* O número de instruções a serem armazenadas em cache no cache de instruções de cada conexão;
 
 Exemplo de utilização:
 
