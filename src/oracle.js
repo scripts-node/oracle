@@ -115,7 +115,7 @@ class Oracle {
             /*
              * Valida se a conexão usa processo compartilhado
              */
-            if(this.DEDICATED === true){
+            if(this.DEDICATED.length > 0 && this.DEDICATED === "true" || this.DEDICATED === true){
                 this.USE_DEDICATED = '(SERVER=dedicated)';
             }else{
                 this.USE_DEDICATED = '';
